@@ -85,8 +85,8 @@ void draw_arr(float * hsv_arr, int sz)
     float rgb[3];
     hsv2rgb(hsv_arr[3*i], hsv_arr[3*i+1], hsv_arr[3*i+2], rgb);
     pixels.setPixelColor(i, pixels.Color((int)rgb[0], (int)rgb[1], (int)rgb[2])); // Moderately bright green color.
-    pixels.show(); // This sends the updated pixel color to the hardware.
-  }  
+  }
+  pixels.show(); // This sends the updated pixel color to the hardware.
 }
 
 void animation_flight_mode(unsigned long t_ms, int duration_ms, int *indices, int indices_sz)
